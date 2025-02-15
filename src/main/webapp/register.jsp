@@ -15,15 +15,15 @@
     	<div>
         	<input type="email" name="email" placeholder="Email Id" required>
     	</div>
-    	<%!
+    	<%-- <%!
     		String password;
     		String confirm_password;
-    	%>
+    	%> --%>
     	<div>
-    	    <input type="password" name="password" placeholder="Password" required>
+    	    <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required>
     	</div>
     	<div>
-    	    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+    	    <input type="password" name="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Confirm Password" required>
     	</div>
     	<%-- <%
     		password = request.getParameter("password");
